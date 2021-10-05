@@ -2,7 +2,7 @@ package chapter2
 import java.util.*
 
 fun main() {
-    val binaryReps: TreeMap<Char, String> = TreeMap()
+    val binaryReps = sortedMapOf<Char, String>()//TreeMap<Char, String> = TreeMap()
     for(c in 'A'..'F'){
         val binary = Integer.toBinaryString(c.code)
         binaryReps[c] = binary
